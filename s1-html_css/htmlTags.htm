@@ -37,8 +37,130 @@
 
     <br /><br />
 
-    Open from <time>10:00</time> to <time>21:00</time> every weekday.
-    I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.
-    
+    Open from <time>10:00</time> to <time>21:00</time> every weekday. I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.
+
+    <ul>
+      <li>Number one</li>
+      <li>Number two</li>
+      <li>Number three</li>
+    </ul>
+
+    <ol>
+      <li>Number one</li>
+      <li>Number two</li>
+      <li>Number three</li>
+    </ol>
+
+    <dl>
+      <dt>Description title 1</dt>
+      <dd>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint et labore atque veniam, iusto aliquid, odit quam fugit aut doloribus quibusdam voluptatum omnis porro officia magni dolorem
+        autem alias maiores quidem asperiores illo soluta similique a. Neque et quas incidunt aperiam odit quae tempora, exercitationem omnis nam at accusantium?
+      </dd>
+      <dt>Description title 2</dt>
+      <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos asperiores soluta commodi, alias neque omnis cumque qui earum quam consectetur.</dd>
+    </dl>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Title 1</th>
+          <th>Title 2</th>
+          <th>Title 3</th>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <td>Foot 1</td>
+          <td>Foot 2</td>
+          <td>Foot 3</td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>Cell 1-1</td>
+          <td>Cell 1-2</td>
+          <td rowspan="2">Cell 1-3</td>
+        </tr>
+        <tr>
+          <td>Cell 2-1</td>
+          <td>Cell 2-2</td>
+        </tr>
+        <tr>
+          <td>Cell 2-1</td>
+          <td colspan="2">Cell 2-2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br />
+
+    <p>
+      <label for="nameField"> Name: </label> <label><input type="text" id="nameField" name="nameField" placeholder="Jeff" value="" /> </label>
+      <label> Family: <input type="text" name="familyField" id="familyField" placeholder="Bzoss" value="" /> </label> <br />
+      <label> Chaeckbox: <input type="checkbox" name="choosedCheckBox" id="choosedCheckBox" /> </label> <br />
+      <label>Radiobutton1: <input type="radio" name="radioSample" value="1" id="radioSample" /></label> <br />
+      <label>Radiobutton2: <input type="radio" name="radioSample" value="2" id="radioSample" /></label> <br />
+      <label for="emailSample">Email:</label> <label> <input type="email" name="emailSample" id="emailSample" /> </label> Tel: <input type="tel" name="telSample" id="telSample" /> <br />
+      Pass: <input type="password" name="passSample" id="passSample" /> <br />
+    </p>
+
+    <p>
+      <label for="country">Country:</label>
+      <select id="country">
+        <option>ایران</option>
+        <option>France</option>
+        <option>Germany</option>
+        <option>Italy</option>
+        <option>Japan</option>
+        <option>Russia</option>
+        <option>United Kingdom</option>
+        <option>United States</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="multipleChoose">Multiple Choose:</label>
+      <select id="multipleChoose" multiple>
+        <option>ایران</option>
+        <option>France</option>
+        <option>Germany</option>
+        <option>Italy</option>
+        <option>Japan</option>
+        <option>Russia</option>
+        <option>United Kingdom</option>
+        <option>United States</option>
+      </select>
+    </p>
+
+    <input type="submit" value="Save" />
+    ----------------------------------------------<br />
+
+    <header>
+      <nav><a href="#">Some links</a></nav>
+    </header>
+
+    <main>
+      <section>
+        <article>Article1</article>
+        <article>Article2</article>
+      </section>
+
+      <section>
+        <article>Article1</article>
+      </section>
+
+      <aside>
+        <section>Sidebar1</section>
+        <section>Sidebar2</section>
+      </aside>
+    </main>
+
+    <footer>
+      Footer is here
+      <nav><a href="#">SomeLinks</a></nav>
+    </footer>
   </body>
 </html>
