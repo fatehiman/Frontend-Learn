@@ -1,12 +1,44 @@
 * {
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
 }
 
 th {
-    font-size: larger;
+  font-size: larger;
+  border: 1px solid black;
 }
 
 td {
-    font-size: large;
+  font-size: large;
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(235, 235, 235);
+}
+
+.teams{
+    display: flex;
+    justify-content: space-around;
+}
+
+.team{
+    width: 45%;
+}
+
+.status{
+    margin-top:100px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
