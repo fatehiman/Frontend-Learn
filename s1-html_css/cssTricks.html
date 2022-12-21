@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cssTricks.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <p>This is a p inside parent</p>
+
+      <div class="child1">
+        <p>This is 1st p in child1 (dirct child)</p>
+        <div>
+          <p>This is 2nd p in child1 but in a div</p>
+          <p>This is 3rd p in child1 but in a div</p>
+        </div>
+      </div>
+
+      <p>This is 1st p after child1</p>
+      <p>This is 2nd p after child1</p>
+      <p>This is 3rd p after child1</p>
+
+      <div class="child2">This is child2</div>
+
+      <p>This is 1st p after child2 without Smpl class</p>
+      <p class="smpl">This is 2st p after child2 with Smpl class</p>
+      <p>This is 3rd p after child2 without Smpl class</p>
+      <p class="smpl">This is 4th p after child2 with Smpl class</p>
+      <p>This is 5th p after child2 without Smpl class</p>
+      <p class="smpl">This is 6th p after child2 with Smpl class</p>
+    </div>
+
+    <p>
+      <input type="email" name="input1" id="input1" value="email" />
+      <input type="tel" name="input2" id="input2" value="tel" />
+      <input type="password" name="input3" id="input3" value="password" />
+      <input type="text" name="input4" id="input4" value="text" />
+    </p>
+
+    <main class="linksContainer">
+      <a href="https://google.com" target="_blank">target is blank</a>
+      <a href="http://google.com">^ starts with HTTP: </a>
+      <a href="https://google.net" target="">$ end with .net</a>
+      <a href="https://www.kimiasoft.com" target="">* contains kimia</a>
+      <a href="https://google.com" class="first second third fourth" target="">a link that target is not blank</a>
+    </main>
+  </body>
+</html>

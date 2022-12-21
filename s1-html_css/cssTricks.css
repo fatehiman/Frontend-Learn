@@ -1,0 +1,76 @@
+* {
+  /* all elements include body */
+  padding: 0px;
+}
+
+div {
+  /* all DIV elements */
+  border: 1px dotted red;
+  margin: 10px;
+}
+
+.parent {
+  border-style: solid;
+}
+
+.child1 {
+  background-color: rgb(243, 243, 243);
+}
+
+.child1 p {
+  /* all p INSIDE child1 */
+  font-weight: bold;
+}
+
+.child1 > p {
+  /* all p INSIDE child1 but DIRECT child */
+  color: rgb(197, 171, 54);
+}
+
+.child1 + p {
+  /* only first p AFTER child1. NOTE that the tag must be next to the child1 */
+  color: rgb(197, 45, 45);
+}
+
+.child1 ~ p {
+  /* all p AFTER child1 */
+  background-color: rgb(187, 245, 211);
+}
+
+#input1 {
+  background-color: rgb(193, 236, 222);
+}
+
+input[type="tel"] {
+  background-color: rgb(223, 202, 243);
+}
+
+.linksContainer a {
+  background-color: rgb(233, 219, 200);
+  display: inline-block;
+  height: 25px;
+  padding: 3px;
+  margin: 5px;
+}
+
+a[target="_blank"] {
+  color: rgb(199, 51, 51);
+}
+a[href^="http:"] {
+  color: rgb(0, 0, 0);  
+}
+a[href$=".net"] {
+  color: rgb(34, 13, 131);  
+  font-weight: bold;
+}
+a[href*="kimia"] {
+  color: rgb(61, 158, 52);  
+}
+a[class|="htt"] {
+  color: rgb(88, 44, 189);
+  font-style: italic;
+}
+a[class~="third"] {
+  color: rgb(88, 44, 189);
+  font-style: italic;
+}
