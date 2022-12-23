@@ -38,14 +38,17 @@ div {
 }
 
 #input1 {
-  background-color: rgb(193, 236, 222);
+  /* input element that id=input1 */
+  background-color: rgb(180, 176, 235);
 }
 
 input[type="tel"] {
-  background-color: rgb(223, 202, 243);
+  /* input element that type=tel */
+  background-color: rgb(137, 182, 154);
 }
 
 .linksContainer a {
+  border: 1px solid gray;
   background-color: rgb(233, 219, 200);
   display: inline-block;
   height: 25px;
@@ -54,23 +57,29 @@ input[type="tel"] {
 }
 
 a[target="_blank"] {
+  /* a tags that target='_blank' */
   color: rgb(199, 51, 51);
 }
 a[href^="http:"] {
-  color: rgb(0, 0, 0);  
+  /* a tags that href STARTS WITH http: */
+  color: rgb(0, 0, 0);
 }
 a[href$=".net"] {
-  color: rgb(34, 13, 131);  
+  /* a tags that ENDS WITH .net */
+  color: rgb(34, 13, 131);
   font-weight: bold;
 }
-a[href*="kimia"] {
-  color: rgb(61, 158, 52);  
+a[href*="imia"] {
+  /* a tags that CONTAINS imia */
+  color: rgb(61, 158, 52);
 }
 a[class|="htt"] {
+  /* a tags that STARTS WITH http- */
   color: rgb(88, 44, 189);
   font-style: italic;
 }
 a[class~="third"] {
-  color: rgb(88, 44, 189);
+  /* a tags that CONTAINS WORD third */
+  color: rgb(117, 100, 5);
   font-style: italic;
 }
