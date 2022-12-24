@@ -1,70 +1,35 @@
 body{
-  margin: 0;
+  margin:0;
 }
 
-.box {
-  border: 1px solid rgb(34, 33, 33);
-  background: rgb(223, 125, 125);
-  width: 100px;
-  height: 100px;
-  /* margin: 3px; */
+.box{
+  width:100px;
+  height:100px;
+  border:1px solid black;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.absolute {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  left: calc(300px - 70px);
-  top: 0px;
-}
 
-.absolute2 {
-  background: #000;
-  color: white;
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  /* left: calc(50% - 70px); */
-  transform: translateX(-50%) translateY(-50%);
-  left: 50%;
-  /* top: 150px; */
-  top: 50%;
-}
-
-.green {
-  background: green;
-}
-
-.relativeParent {
-  position: relative;
-  /* width: 300px; */
-  width: 50%;
-  height: 500px;
-  background: rgb(166, 168, 245);
-}
-
-.notRelativeParent {
+.parent{
+  background: #a0a0a0;
   width: 200px;
-  height: 450px;
-  background: rgb(194, 188, 188);
+  height: 200px;  
+  position: relative;
+  margin-left: 20px;
 }
 
+.sticky{
+  width: 100px;
+  height: 50px;
+  top: 10px;
+  background: rgb(78, 209, 110);
+  position: sticky;
+}
 
-
-
-
-
-.notes{
-  direction: rtl;
-  width:100%;
-  /* width: calc(100% - 0px); */
-  /* position: absolute; */
-  bottom: 0px;
-  border-radius: 5px;
-  /* margin: 3px; */
-  /* border: 1px solid gray; */
-  padding: 5px;
-  background: rgb(240, 211, 117);
-  font-family: 'Tahoma';
-  font-size: 8pt;  
+.spc{
+  background: rgb(216, 133, 133);
+  transform: translate(-50%,-20px);
 }

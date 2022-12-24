@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="positions-1.css" />
+    <link rel="stylesheet" href="notes.css" />
+    <title>Document</title>
+  </head>
+  <body title="body is always relative">
+    <div class="green box"></div>
+    <div class="box relativeParent" title="Relative">
+      <div class="box notRelativeParent" title="NotRelative">
+        <div class="box">Normal</div>
+        <div class="box">Normal</div>
+        <div class="box absolute">Absolute</div>
+        <div class="box">Normal</div>
+      </div>
+    </div>
+    <div class="box absolute2" title="parent is body">Absolute2 parent is body</div>
+
+    <div class="notes">
+      نکات:
+      <ol>
+        <li>فلوی صفحه به چیدمان معمولی صفحه میگن</li>
+        <li>view port به صفحه میگن</li>
+        <li>بادی خودش relative هست</li>
+        <li>پوزیشن absolute نسب به اولین والده relative هست</li>
+        <li>در css میشه از <span dir="ltr">calc()</span> استفاده کرد</li>
+        <li>اگر المنتی absolute بشه ولی هیچ پوزیشنی بهش ندیم تو فولی اصلی خودش قرار میگیره یعنی همونجایی قرار میگیره که اگر absolute نبوده قرار میگرفته</li>
+        <li>الان المنت absolute2 رو با استفاده از calc وسط view port قرار دادیم</li>
+      </ol>
+    </div>
+  </body>
+</html>

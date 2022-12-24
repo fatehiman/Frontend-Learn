@@ -1,0 +1,47 @@
+.body {
+  margin: 0px;
+}
+
+.container {
+  border: 2px solid black;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap; 
+  /* default=nowrap */
+  flex-direction: row-reverse;
+  /* flex-direction: column; */
+  /* default=row */
+}
+
+.item {
+  border: 1px solid gray;
+  width: 88px;
+  height: 88px;
+  padding: 5px;
+  font-size: 8pt;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+  flex-shrink: 0;
+}
+
+.blue {
+  background: blue;
+}
+
+.pink {
+  background: pink;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.magenta {
+  background: magenta;
+}

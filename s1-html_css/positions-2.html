@@ -5,29 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="positions-2.css" />
+    <link rel="stylesheet" href="notes.css" />
     <title>Document</title>
   </head>
-  <body title="body is always relative">
-    <div class="green box"></div>
-    <div class="box relativeParent" title="Relative">
-      <div class="box notRelativeParent" title="NotRelative">
-        <div class="box">Normal</div>
-        <div class="box">Normal</div>
-        <div class="box absolute">Absolute</div>
-        <div class="box">Normal</div>
-      </div>
+  <body>
+    1<br />2<br />3<br />4<br />5
+    <div class="parent">
+      <div class="sticky">This is sticky at top:10</div>
     </div>
-    <div class="box absolute2" title="parent is body">Absolute2 parent is body</div>
+    <div class="box">1</div>
+    <div class="box spc">2</div>
+    <div class="box">3</div>
 
     <div class="notes">
-      نکات:
+      نکات
       <ol>
-        <li>فلوی صفحه به چیدمان معمولی صفحه میگن</li>
-        <li>ویو پورت به صفحه میگن</li>
-        <li>بادی خودش ریلیتیو هست</li>
-        <li>پوزیشن ابسولوت نسب به اولین والده ریلیتیوش هست</li>
-        <li>برای اینکه </li>
-        <li>پوزیشن ابسولوت نسب به اولین والده ریلیتیوش هست</li>
+        <li>پوزیشن با transform دیگه اسکرال نداره حتی اگر بیرون از صفحه بیفته</li>
+        <li>جاش هم خالی میمونه</li>
+        <li>z-index فقط برای المنت هایی هست که ابسلوت شدن</li>
+        <li>پوزیشنهای sticky و fix از جنس absolute هستند</li>
+        <li>پوزیشن sticky (مثل top و bottom) همیشه نسبت به گوشه های مرورگر هست ولی absolute نسبت به اولین المنت relative هست</li>
       </ol>
     </div>
   </body>
