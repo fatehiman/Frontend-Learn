@@ -1,0 +1,56 @@
+.body {
+}
+
+.container {
+  border: 2px solid black;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap; 
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-content: space-around  ; */
+  align-items: center;  
+  /* gap: 20px; */
+}
+
+.item {
+  border: 1px solid gray;
+  width: 88px;
+  height: 88px;
+  padding: 5px;
+  font-size: 8pt;
+}
+
+.red {
+  background: red;
+  padding-top: 30px;
+  height: 80px;
+}
+
+.green {
+  background: green;
+  height: 20px;
+}
+
+.blue {
+  background: blue;
+  height: 100px;
+  line-height: 700%;
+}
+
+.pink {
+  background: pink;
+  height: 50px;
+}
+
+.yellow {
+  background: yellow;
+  height: 20px;
+  align-self: flex-start;
+}
+
+.magenta {
+  background: magenta;
+  height: 70px;
+}

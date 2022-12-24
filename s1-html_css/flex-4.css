@@ -1,0 +1,49 @@
+.body {
+}
+
+.container {
+  border: 2px solid black;
+  height: 400px;
+  display: flex;
+  /* flex-wrap: wrap;  */
+}
+
+.item {
+  border: 1px solid gray;
+  width: 200px;
+  height: 88px;
+  padding: 5px;
+  font-size: 8pt;
+}
+
+.red {
+  background: red;
+  height: 80px;
+  /* flex-shrink: 0.5; */
+  flex-grow: 0;
+}
+
+.green {
+  background: green;
+  height: 20px;
+}
+
+.blue {
+  background: blue;
+  height: 100px;
+}
+
+.pink {
+  background: pink;
+  height: 50px;
+}
+
+.yellow {
+  background: yellow;
+  height: 20px;
+}
+
+.magenta {
+  background: magenta;
+  height: 70px;
+}
