@@ -1,0 +1,90 @@
+body {
+  margin: 0px;
+}
+
+main {
+  border-style: double;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  width: 70%;
+  height: 70vh;
+  gap: 2% 0%;
+}
+
+.item {
+  /* width: 50px; */
+  /* height: 50px; */
+  color: #fff;
+  font-size: 9pt;
+  font-family: "Courier";
+  text-shadow: 1px 1px 10px rgb(10, 39, 134), 1px 1px 3px rgb(0, 0, 0);
+  align-self: center;
+  justify-self: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.violet {
+  background: violet;
+  grid-row: 2 span;
+  width: 100%;
+  height: 40%;
+}
+
+.indigo {
+  background: indigo;
+  align-self: end;
+  width: 90%;
+  height: 70%;
+}
+
+.indigo2 {
+  background: indigo;
+  align-self: start;
+  width: 90%;
+  height: 70%;
+}
+
+.blue {
+  background: blue;
+  grid-row: 2 span;
+  grid-column: 3/5;
+  width: 100%;
+  height: 90%;
+}
+
+.green {
+  background: green;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.orange {
+  background: orange;
+}
+
+.red {
+  background: red;
+}
+
+.gray {
+  background: gray;
+  /* grid-column: 1/2; */
+}
+
+.black {
+  background: black;
+}
+
+.cyan {
+  background: cyan;
+  /* grid-column: 3/5; */
+  grid-column: 2 span;
+}

@@ -13,3 +13,10 @@ Sliders:
   owl
 
 
+-----Usefult test sites-----
+Check browser compatibility for CSS and HTML and JS:
+  https://caniuse.com/
+
+
+Website speedtest and SEO check:
+
