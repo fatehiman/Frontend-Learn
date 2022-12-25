@@ -1,0 +1,84 @@
+body {
+  margin: 0px;
+}
+
+main {
+  border-style: double;
+  display: grid;
+  /* grid-template-columns: repeat(5,1fr); */
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: end;
+  align-content: start;
+
+  height: 500px;
+  gap: 10px 5px;
+}
+
+.item {
+  /* width: 50px; */
+  /* height: 50px; */
+  color: #fff;
+  font-size: 9pt;
+  font-family: "Courier";
+  text-shadow: 1px 1px 10px rgb(10, 39, 134), 1px 1px 3px rgb(0, 0, 0);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black div {
+  border: 1px solid red;
+  width: 30px;
+  height: 30px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.black {
+  background: black;
+  gap:3px;
+}
+
+.violet {
+  background: violet;
+}
+
+.indigo {
+  background: indigo;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.orange {
+  background: orange;
+}
+
+.red {
+  background: red;
+}
+
+.gray {
+  background: gray;
+}
+
+.magenta {
+  background: magenta;
+  justify-self: start;
+  align-self: end;
+}
+
+.cyan {
+  background: cyan;
+}

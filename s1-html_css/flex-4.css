@@ -10,7 +10,7 @@
 
 .item {
   border: 1px solid gray;
-  width: 200px;
+  width: 100px;
   height: 88px;
   padding: 5px;
   font-size: 8pt;
@@ -19,13 +19,14 @@
 .red {
   background: red;
   height: 80px;
-  /* flex-shrink: 0.5; */
-  flex-grow: 0;
+  flex-shrink: 0;
+  flex-grow: 1;
 }
 
 .green {
   background: green;
   height: 20px;
+  flex-grow: 2;
 }
 
 .blue {

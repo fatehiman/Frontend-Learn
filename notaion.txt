@@ -1,0 +1,15 @@
+
+
+
+-----Technologies-----
+CSS:
+  SASS: preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). Abbr of syntactically awesome style sheets
+  TailWind: opensource CSS framework
+
+
+-----JS Libraries-----
+Sliders:
+  https://swiperjs.com
+  owl
+
+
