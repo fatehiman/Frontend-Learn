@@ -52,23 +52,35 @@ console.log(NaN == false);
 
 //SCOPES:
 //blocking scope:
-if (false) {
-  let letInsideBlockingScode=111;
-  var varInsideBlockingScode=222;
+if (true) {
+  let letInsideBlockingScope=111;
+  var varInsideBlockingScope=222;
+  const constInsideBlockingScope=333;
 }
-//console.log(letInsideBlockingScode);     //undefined
-console.log(varInsideBlockingScode);     //will return 222
-
+//console.log(letInsideBlockingScode);     //will raise undefined error and stop
+//console.log(constInsideBlockingScope);   //will raise undefined error and stop
+console.log(varInsideBlockingScope);       //will return 222 (or if the IF-BLOCK not run, will return undefined but no error)
+//یک نکته خیلی جالب در فسمت بالا هست و اون اینکه اگر داخل بلاک شرط نشه
+//متغیری که با ور تعریف شده خطا نمیده و فقط مقدارش آندیفایند میشه
+//ولی در مورد لت، اگر از روی کدی که توش لت داره رد نشه خطای آندیفایند میده
+//و نرم افزار روی خطا متوقف میشه
+//که این بخاطر هویستینگه ور هست. و جالب اینه که تعریفش هویستینگ میشه ولی
+//مقداردهی اولیه فقط وقتی به سطرش میرسه انجام میشه
 
 //function scope:
 function append(a, b) {
   let letInsideFunctionScope=333;
   var varInsideFunctionScope=444;
+  const constInsideFunctionScope=555;
   return a + b;
 }
 append(3, 4);
-//console.log(letInsideFunctionScope);     //undefined
-//console.log(varInsideFunctionScope);     //undefined
+//console.log(letInsideFunctionScope);     //will raise undefined error and stop
+//console.log(constInsideFunctionScope);   //will raise undefined error and stop
+//console.log(varInsideFunctionScope);     //will raise undefined error and stop
 
 //let and var:
-//let
+//console.log(x);   //will raise undefined error and stop
+let x=1;
+console.log(y);     //will return undefined but no error
+var y=1;
