@@ -10,6 +10,7 @@ main {
   grid-template-rows: repeat(3, 100px);
   justify-content: end;
   align-content: start;
+  /* place-content: center; */
 
   height: 500px;
   gap: 10px 5px;

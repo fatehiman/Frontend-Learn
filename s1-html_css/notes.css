@@ -18,3 +18,7 @@
 .notes ol{
   padding-inline-start: 20px;
 }
+
+.notes span{
+  color: rgb(61, 61, 160);
+}

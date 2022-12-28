@@ -23,20 +23,32 @@
         <div>2</div>
         <div>3</div>
       </div>
-      <div class="item magenta">Magenta</div>
+      <div class="item magenta">Magenta<br />align-self:end<br />justify-self:start</div>
       <div class="item cyan">Cyan</div>
     </main>
 
     <div class="notes">
       <ol>
         <li>تابع repeat(n , str) در css میاد و str را سه بار تکرار میکند.</li>
-        <li>align برای تنظیم در محور عمودی است. مانند align-content:start یعنی در محور عمودی بالاچین بشود.</li>
-        <li>justify برای تنظیم در محور افقی است. مانند justify-content:end یعنی در محور افقی در انتها 
-          (راست)
-          چیدمان بشود.</li>
-        <li></li>
+        <li>
+          <span dir="ltr">justify</span> برای تنظیم در محور افقی است. مانند <span dir="ltr">justify-content:end</span> یعنی محتویات المان گرید (دقت شود، خوده المانی که
+          <span dir="ltr">display:grid</span> دارد) در محور افقی در انتها (راست) قرار بگیرد. دقت شود که اگر محتویات گرید استرچ شده باشند یا کل عرض رو پر کرده باشند دیگر وسطچین و چپ چین و راستچین معنا
+          ندارد. برای همین برای تست به المانی که گرید شده طول و عرض بدهید و المانهای داخل جوری باشند که فضای خالی در اطراف وجود داشته باشد که این پراپرتی معنا داشته باشد.
+        </li>
+        <li><span dir="ltr">align</span> برای تنظیم در محور عمودی است. مانند <span dir="ltr">align-content:start</span> یعنی محتویات گرید ما، در محور عمودی بالاچین بشود.</li>
+        <li>
+          حال اگر بخواهیم درمورد چیدمان محتویات داخل سلولها تصمیم بگیریم، بجای <span dir="ltr">-content</span> باید از <span dir="ltr">-items</span> استفاده کنیم. مثلا اگر بخواهیم محتویات سلولها همگی
+          به راست چیدمان شوند باید از پراپرتی <span dir="ltr">justify-items: end;</span> استفاده کنیم.
+        </li>
+        <li>پراپرتیهای بالا، می بایست به خوده المان grid داده شود. حالا اگر بخواهیم چیدمان یک سلول خاص پاین باشد باید از پراپرتی <span dir="ltr">align-items: end</span> استفاده کنیم.</li>
+        <li>نکته: در مورد وسطچین کردن یک متن داخل یک div ابتدا div موردنظر را <span dir="ltr">display:flex</span> میکنیم سپس با <span dir="ltr">justify-conect:center</span> از نظر افقی محتویات آنرا وسطچین کرده و با
+          <span dir="ltr">align-items:center</span> محتویات را از نظر عمودی وسطچین میکنیم.
+        </li>
+        <li>از پراپرتی <span dir="ltr">place-content</span>   میتوان بجای استفاده از دو پراپرتی
+          <span dir="ltr">justify-conect</span> و <span dir="ltr">align-content</span> به صورت همزمان و با یک مقدار استفاده کرد.
+        </li>
+        <li><span dir="ltr">place-items</span> هم مشابه مورد بالاست.</li>
       </ol>
-
     </div>
   </body>
 </html>

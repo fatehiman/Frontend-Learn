@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="grid-5.css" />
+    <link rel="stylesheet" href="notes.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="grid">
+        <div class="item violet"><span>Violet</span></div>
+        <div class="item indigo"><span>Indigo</span></div>
+        <div class="item blue"><span>Blue</span></div>
+        <div class="item green"><span>Green</span></div>
+        <div class="item yellow"><span>Yellow</span></div>
+        <div class="item orange"><span>Orange</span></div>
+        <div class="item red"><span>Red, extra cell</span></div>
+        <div class="item black"><span>Black, extra cell</span></div>
+      </div>
+
+      <div class="notes">
+        <ol>
+          <li>
+            <span dir="ltr">grid-auto-flow</span> که پیش فرض آن row است مشخص می کند که اگر سلولهای گرید بیش از حد شد، آنها را به row ها یعنی ردیفهای جدول اضافه کند. اگر این پراپرتی column باشد، به
+            ستونهای جدول اضافه می کند.
+          </li>
+          <li>
+            می توانیم مشخص کنیم که این سلولها اضافه، عرض یا ارتفاعشان چقدر باشد. با پراپرتی <span dir="ltr">grid-auto-rows</span> مشخص میکنیم که ارتفاع ردیفهای اضافه چقدر باشد که در اینجا تنظیم شده
+            است.
+          </li>
+          <li>با <span dir="ltr">grid-auto-columns</span> نیز، عرض سلولهای مازاد در حالت <span dir="ltr">grid-auto-flows:columns</span> مشخص می شود.</li>
+        </ol>
+      </div>
+    </main>
+  </body>
+</html>
