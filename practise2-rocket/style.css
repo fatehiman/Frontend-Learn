@@ -1,0 +1,27 @@
+body{
+  margin:0;
+}
+
+main{
+  display: flex;
+  height: 100vh;
+}
+
+.left{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #000;
+  background: red;
+}
+
+.right{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  background: green;
+}
