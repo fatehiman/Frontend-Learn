@@ -70,7 +70,55 @@ console.log("Reduce result= " + newArrRes);
 const elections = ["a", "b", "a", "a", "c", "d", "b", "c", "c", "a"];
 var electionsRes = [];
 elections.map((arrItem) => {
-  if (!electionsRes[arrItem]) electionsRes[arrItem]=0;
+  if (!electionsRes[arrItem]) electionsRes[arrItem] = 0;
   electionsRes[arrItem]++;
 });
 console.log(electionsRes);
+
+//array and object destruction in js:
+console.log("Array destructing: ");
+const arrSample = [1, 2, 3, 4, 5];
+const [y, z] = arrSample;
+console.log(y); // 1
+console.log(z); // 2
+
+console.log("Object destructing: ");
+const objSample = {
+  nameA: "Mark",
+  familyA: "Zakerburg",
+  companyA: "Meta",
+};
+const { familyA, nameA } = objSample;
+console.log("Name=" + nameA);
+console.log("Family=" + familyA);
+//NOTE: we can change the name of an property when destructing:
+const { familyA: familyB, nameA: nameB } = objSample;
+console.log("Name=" + nameB);
+console.log("Family=" + familyB);
+
+//nullish operator: will return the first defined value
+const aa = undefined ?? null ?? "Roberto" ?? undefined ?? "Carlos";
+console.log("Nullish operator result=" + aa);
+
+//optional chaining: will prevent error and stop in JS and only return undefined
+const bb = { name: "Steve", family: "Jobs" };
+console.log("Optional chaining return=" + bb.name.age); //undefined
+console.log("Optional chaining return=" + bb.name.age?.max); //undefined
+//console.log("Optional chaining return="+bb.name.age.max);     //raise js error
+
+//ternary operation:
+const res = 5 > 1 ? "yes" : "no";
+console.log("Ternary operation: " + res);
+
+console.log("A SAMPLE: count elections");
+const array = ["a", "b", "a", "a", "c", "b", "d", "c", "b", "a", "a"];
+arr = { a: 0, b: 0, c: 0, d: 0 };
+array.map((index) => arr[index]++);
+
+// const arr = array.reduce(
+//   (prev, curr) => {
+//     return { ...prev, [curr]: prev[curr] + 1 };
+//   },
+//   { a: 0, b: 0, c: 0, d: 0 }
+// );
+console.log(arr);
