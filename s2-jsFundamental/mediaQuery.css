@@ -1,0 +1,32 @@
+body {
+  background-color: #009966;
+  font-family: tahoma;
+  direction: rtl;
+}
+
+body:after {
+  color: white;
+  display: block;
+  content: "الان محدوده نمایش برابر یا کمتر از 600 پیکسل است.";
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 4em;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+  body {
+    background-color: darkorange;
+  }
+  body:after {
+    content: "عرض محدوده نمایش بین 600 و 1024 پیکسل می باشد.";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: purple;
+  }
+  body:after {
+    content: "در حال حاضر عرض محدوده نمایش برابر یا بیشتر از 1024px می باشد. ";
+  }
+}
