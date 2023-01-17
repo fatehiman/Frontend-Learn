@@ -1,0 +1,19 @@
+
+div {
+  border: 1px solid #000;
+  background: yellow;
+  font-size: 9pt;
+  width: 300px;
+  padding: 5px;
+  margin: 3px;
+}
+
+span{
+  border: 1px solid #000;
+  background: pink;
+  font-size: 9pt;
+  width: 300px;
+  padding: 5px;
+  margin: 3px;
+  display: block;
+}

@@ -1,0 +1,15 @@
+.box{
+  width: 100px;
+  height: 100px;
+  background: red;
+  border: 1px solid #000;
+  margin: 2px;
+}
+
+.green{
+  background: green;
+}
+
+.bold{
+  font-weight: bold;
+}

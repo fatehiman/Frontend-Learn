@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+}
+.box {
+  border: 1px solid #000;
+}
+
+.redBorder{
+  border: 1px solid red;
+}
+
+.outer {
+  width: 150px;
+  height: 150px;
+  background: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner {
+  width: 80px;
+  height: 80px;
+  background: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
