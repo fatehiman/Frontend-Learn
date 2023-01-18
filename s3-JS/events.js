@@ -6,8 +6,12 @@ const log = document.querySelector("#log");
 tasks.addEventListener("click", (e) => {
   console.log("target=", e.target);
   console.log("current target=", e.currentTarget);
+  if (e.target.classList.contains("removeButton")) {
+    //remove button clicked
+    e.target.parentNode.remove();
+  }
   if (e.target.tagName == "LI") {
-    log.innerHTML += "List item <span style=\"color:red\">'"+e.target.innerHTML+"'</span> clieck!<br />";
+    log.innerHTML += 'List item <span style="color:red">\'' + e.target.innerHTML + "'</span> clieck!<br />";
   }
 });
 
@@ -17,7 +21,7 @@ eventTitle.addEventListener("keypress", (e) => {
   }
 });
 addBtn.addEventListener("click", () => {
-  tasks.innerHTML += `<li>${eventTitle.value}</li>`;
+  tasks.innerHTML += `<li>${eventTitle.value} <button class="removeButton">Remove</button></li>`;
   document.getElementById("taskTitle").value = "";
 });
 

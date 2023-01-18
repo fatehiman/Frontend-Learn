@@ -9,6 +9,10 @@
   border: 1px solid red;
 }
 
+.removeButton{
+  margin-left:50px;
+}
+
 .outer {
   width: 150px;
   height: 150px;
